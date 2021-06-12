@@ -38,5 +38,6 @@ for i in range(len(df1)):
 df1['A'] = df1['A'].round(decimals = 1)
 df1['B'] = df1['B'].round(decimals = 1)
 df1['C'] = df1['C'].round(decimals = 1)       
-df1['D'] = df1["C"] - df1["A"]        
+df1['D'] = df1['C'] - df1['A'] 
+df1 = df1.sort_values('D',ascending = False)  
 print(df1)
